@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7639A4232959EFAA004051A6 /* GuiliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A4222959EFAA004051A6 /* GuiliaApp.swift */; };
-		7639A4252959EFAA004051A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A4242959EFAA004051A6 /* ContentView.swift */; };
+		7639A4252959EFAA004051A6 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A4242959EFAA004051A6 /* PeopleView.swift */; };
 		7639A4272959EFAB004051A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7639A4262959EFAB004051A6 /* Assets.xcassets */; };
 		7639A42A2959EFAB004051A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7639A4292959EFAB004051A6 /* Preview Assets.xcassets */; };
+		7639A434295B3209004051A6 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A433295B3209004051A6 /* PeopleViewModel.swift */; };
+		7639A438295B3B36004051A6 /* HearderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A437295B3B36004051A6 /* HearderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7639A41F2959EFAA004051A6 /* Guilia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guilia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7639A4222959EFAA004051A6 /* GuiliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuiliaApp.swift; sourceTree = "<group>"; };
-		7639A4242959EFAA004051A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7639A4242959EFAA004051A6 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		7639A4262959EFAB004051A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7639A4292959EFAB004051A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7639A42B2959EFAB004051A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7639A433295B3209004051A6 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		7639A437295B3B36004051A6 /* HearderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,10 @@
 		7639A4212959EFAA004051A6 /* Guilia */ = {
 			isa = PBXGroup;
 			children = (
-				7639A4222959EFAA004051A6 /* GuiliaApp.swift */,
-				7639A4242959EFAA004051A6 /* ContentView.swift */,
-				7639A4262959EFAB004051A6 /* Assets.xcassets */,
 				7639A42B2959EFAB004051A6 /* Info.plist */,
+				7639A4262959EFAB004051A6 /* Assets.xcassets */,
+				7639A4222959EFAA004051A6 /* GuiliaApp.swift */,
+				7639A43B295B4F0E004051A6 /* Views */,
 				7639A4282959EFAB004051A6 /* Preview Content */,
 			);
 			path = Guilia;
@@ -67,6 +71,32 @@
 				7639A4292959EFAB004051A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7639A43B295B4F0E004051A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7639A43D295B4F41004051A6 /* Components */,
+				7639A440295B500B004051A6 /* People */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7639A43D295B4F41004051A6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7639A437295B3B36004051A6 /* HearderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7639A440295B500B004051A6 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				7639A433295B3209004051A6 /* PeopleViewModel.swift */,
+				7639A4242959EFAA004051A6 /* PeopleView.swift */,
+			);
+			path = People;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7639A4252959EFAA004051A6 /* ContentView.swift in Sources */,
+				7639A4252959EFAA004051A6 /* PeopleView.swift in Sources */,
+				7639A434295B3209004051A6 /* PeopleViewModel.swift in Sources */,
+				7639A438295B3B36004051A6 /* HearderView.swift in Sources */,
 				7639A4232959EFAA004051A6 /* GuiliaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
